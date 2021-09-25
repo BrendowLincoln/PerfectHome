@@ -1,0 +1,38 @@
+:host ::ng-deep mat-toolbar {
+    background-color: transparent;
+}
+
+.primary-section {
+    height: 768px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    .header  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        height: 104px;
+        color: black;
+
+        .menu {
+            border: 1px solid red;
+            margin-left: 30px;
+        }
+
+    }
+
+    .primary-section-color {
+        width: 55%;
+        height: 100%;
+        background: radial-gradient(farthest-side at -64% 7%, #0014C7 , #0C2B96, #092B54);
+    }
+
+    .primary-section-image {
+        width: 45%;
+        height: 100%;
+        background-color: #095426;
+    }
+}

@@ -12,6 +12,7 @@ import { MAT_DATE_LOCALE } from "@angular/material/core";
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatMenuModule } from '@angular/material/menu';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
     imports: [
@@ -26,7 +27,9 @@ import { MatMenuModule } from '@angular/material/menu';
         MatDialogModule,
         MatSnackBarModule,
         MatNativeDateModule,
-        MatMenuModule
+        MatMenuModule,
+        MatStepperModule,
+        MatToolbarModule
     ],
     exports: [
         CommonModule,
@@ -40,10 +43,12 @@ import { MatMenuModule } from '@angular/material/menu';
         MatDialogModule,
         MatSnackBarModule,
         MatNativeDateModule,
-        MatMenuModule
+        MatMenuModule,
+        MatStepperModule,
+        MatToolbarModule
     ],
     providers: [
         {provide: MAT_DATE_LOCALE, useValue: 'pt-br'}
     ]
 })
-export class MaterialPublicModule { }
+export class MaterialModule { }
