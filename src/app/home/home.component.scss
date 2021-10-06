@@ -89,12 +89,26 @@
     }
 
     .search-field {
+        display: flex;
+        flex-direction: row;
         position: absolute;
         bottom: 203px;
         left: 211px;
         width: 764px;
+        height: 55px;
         background: white;
         padding: 10px;
+
+        .select-type-property {
+            width: 130px;
+            height: 100%;
+            border: 1px solid red;
+            
+        }
+        .search-form-field {
+            width: 100%;
+        }
+
     }
 
 

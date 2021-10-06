@@ -37,7 +37,15 @@
     <img src="/assets/image1.jpeg" class="primary-section-image">
 
     <div class="search-field">
-        <h2>Ola</h2>
+        <mat-select class="select-type-property">
+            <mat-option value="option1">Option 1</mat-option>
+            <mat-option value="option2">Option 2</mat-option>
+            <mat-option value="option3">Option 3</mat-option>
+        </mat-select>
+        <mat-divider [vertical]="true"></mat-divider>
+        <mat-form-field appearance="outline" class="search-form-field">
+            <input matInput placeholder="Procure por uma cidade, bairro ou código do imóvel">
+        </mat-form-field>
     </div>
         
 </section>

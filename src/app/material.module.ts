@@ -14,6 +14,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
+import {MatSelectModule} from '@angular/material/select';
+import {MatDividerModule} from '@angular/material/divider';
+
+
 
 @NgModule({
     imports: [
@@ -31,7 +35,9 @@ import {MatCardModule} from '@angular/material/card';
         MatMenuModule,
         MatStepperModule,
         MatToolbarModule,
-        MatCardModule
+        MatCardModule,
+        MatSelectModule,
+        MatDividerModule
     ],
     exports: [
         CommonModule,
@@ -48,7 +54,9 @@ import {MatCardModule} from '@angular/material/card';
         MatMenuModule,
         MatStepperModule,
         MatToolbarModule,
-        MatCardModule
+        MatCardModule,
+        MatSelectModule,
+        MatDividerModule
     ],
     providers: [
         {provide: MAT_DATE_LOCALE, useValue: 'pt-br'}
