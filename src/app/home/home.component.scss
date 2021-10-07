@@ -12,64 +12,64 @@
 
 .primary-section {
     height: 768px;
-    position: relative;
+    width: 100vw;
     display: flex;
     flex-direction: row;
-    min-width: 1350px;
+    min-width: 1366px;
 
-    .primary-section-color {
-        width: 55%;
-        height: 100%;
-        background: radial-gradient(farthest-side at -64% 7%, #0014C7 , #0C2B96, #092B54);
+
+    .header  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        height: 104px;
+        color: black;
+        width: 100%;
+        min-width: 1366px;
         
-        .header  {
+
+        .logo {
+            display: block;
+            margin-left: 50px;
+            width: 163px;
+            height: 163px;
+            border: 1px none orange;
+        }
+
+
+        .menu {
+            width: 48%;
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            height: 104px;
-            color: black;
-            border: 1px none red;
-            width: 50%;
-            min-width: 1020px;
-            
-            
+            justify-content: flex-end;
+            gap: 38px;
+            font-family: 'Rubik', sans-serif;
+            font-size: 12px;
+            border: 1px none yellow;
+            font-weight: 500;
 
-            .logo {
-                display: block;
-                margin-left: 50px;
-                width: 163px;
-                height: 163px;
-                border: 1px none orange;
-            }
-
-    
-            .menu {
-                width: 100%;
-                display: flex;
+            .menu-button {
+                color: white;
                 font-family: 'Rubik', sans-serif;
-                font-size: 12px;
-                border: 1px none yellow;
                 font-weight: 500;
-    
-                .menu-button {
-                    color: white;
-                    font-family: 'Rubik', sans-serif;
-                    font-weight: 500;
-                }
-    
-    
             }
+
 
         }
 
+    }
+
+
+    .primary-section-color {
+        width: 65%;
+        height: 100%;
+        background: radial-gradient(farthest-side at -64% 7%, #0014C7, #0C2B96, #092B54);
 
         .container-banner-text {
             display: flex;
             flex-direction: column;
-            width: 100%;
-            height: calc(100%/2);
-            margin-top: 60px;
-            padding-left: 211px;
+            margin-top: 135px;
+            margin-left: 211px;
 
             .banner-text {
                 width: 413px;
@@ -92,7 +92,7 @@
     }
 
     .primary-section-image {
-        width: 45%;
+        width: 35%;
         height: 100%;
         background-color: #095426;
     }
@@ -101,9 +101,10 @@
         display: flex;
         flex-direction: row;
         position: absolute;
-        bottom: 203px;
+        top: 500px;
         left: 211px;
-        width: 764px;
+        width: 56%;
+        min-width: 764px;
         height: 55px;
         background: white;
         padding: 10px;
