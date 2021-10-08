@@ -12,7 +12,7 @@
 
 .primary-section {
     height: 768px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     min-width: 1366px;
@@ -154,5 +154,23 @@
         font-weight: 500;
     }
 
+
+}
+
+.popular-propertys-section {
+    display: flex;
+    justify-content: center;
+    height: 768px;
+    width: 100%;
+    border-color: 2px solid red;
+    min-width: 1366px;
+    margin-top: 45px;
+
+    .background-box {
+        width: 1212px;
+        height: 611px;
+        background-color: #FFF4E6;
+        border-radius: 25px;
+    }
 
 }
