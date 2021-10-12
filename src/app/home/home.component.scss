@@ -15,7 +15,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    min-width: 1366px;
+    min-width: 1340px;
 
 
     .header  {
@@ -26,7 +26,7 @@
         height: 104px;
         color: black;
         width: 100%;
-        min-width: 1366px;
+        min-width: 1340px;
         
 
         .logo {
@@ -158,19 +158,38 @@
 }
 
 .popular-propertys-section {
+    position: relative;
     display: flex;
-    justify-content: center;
-    height: 768px;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    border-color: 2px solid red;
-    min-width: 1366px;
-    margin-top: 45px;
+    height: 768px;
+    min-width: 1340px;
+    overflow-x: hidden;
 
     .background-box {
+        display: flex;
+        justify-content: center;
         width: 1212px;
         height: 611px;
         background-color: #FFF4E6;
         border-radius: 25px;
+        margin-top: 45px;
+        
+
+        .popular-propertys-section-title {
+            font-size: 48px;
+            font-family: 'Rufina', serif;
+            color: #A16800;
+            margin-top: 30px;
+        }
+        
+    }
+
+    .carousel {
+        position: absolute;
+        width: 115%;
+        top: 300px;
     }
 
 }
