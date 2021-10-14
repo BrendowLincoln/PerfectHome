@@ -3,14 +3,22 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    min-height: 400px;
+    height: 350px;
     border: 1px solid red;
     box-sizing: border-box;
 
+
     .slide-car {
-        width: 10%;
-        height: 100%;
+        width: 24%;
+        height: 60%;
         background-color: #27bebe;
+
+        &:nth-of-type(2) {
+            border-color: #0069d9;
+            transform: scale(1.34);
+            z-index: 1;
+            opacity: 1;
+          }
     }
     
 }
