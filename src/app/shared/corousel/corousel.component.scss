@@ -1,24 +1,28 @@
 .carousel-container {
     display: flex;
     justify-content: space-between;
+
     align-items: center;
+    gap: 300px;
     width: 100%;
-    height: 350px;
+    height: 526px;
     border: 1px solid red;
     box-sizing: border-box;
+    overflow: hidden;
 
 
-    .slide-car {
-        width: 24%;
-        height: 60%;
+    .slide-card {
+        min-width: 659px;
+        min-height: 423px;
         background-color: #27bebe;
+        border-radius: 35px;
 
         &:nth-of-type(2) {
             border-color: #0069d9;
-            transform: scale(1.34);
+            transform: scale(1.16);
             z-index: 1;
             opacity: 1;
-          }
+        }
     }
     
 }
