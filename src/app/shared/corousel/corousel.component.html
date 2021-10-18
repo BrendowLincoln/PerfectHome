@@ -1,5 +1,11 @@
-<div class="carousel-container">
-    <mat-card class="slide-card"></mat-card>
-    <mat-card class="slide-card"></mat-card>
-    <mat-card class="slide-card"></mat-card>
+<div #carouselContainer class="carousel-container">
+    <mat-card *ngFor="let number of valuesArray" class="slide-card">{{number}}</mat-card>
+</div>
+<div class="buttons-container">
+    <button mat-fab class="button button-left" (click)="scrollLeft()">
+        <mat-icon class="icon-button icon-button-left">chevron_left</mat-icon>
+    </button>
+    <button mat-fab class="button button-right" (click)="scrollRight()">
+        <mat-icon class="icon-button icon-button-right">chevron_right</mat-icon>
+    </button>
 </div>

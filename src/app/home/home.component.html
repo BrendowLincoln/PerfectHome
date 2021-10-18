@@ -67,20 +67,51 @@
         <p class="popular-propertys-section-title">Imóveis mais vistos</p>
     </div>
 
-    <app-corousel class="carousel"></app-corousel>
+    <app-corousel [valuesArray]="items" class="carousel"></app-corousel>
 
     
 </section>
 <!-- /POPULAR SECTION -->
 
-
-<section class="popular-propertys-section">
-    
-    <div class="background-box">
-        <p class="popular-propertys-section-title">Imóveis mais vistos</p>
+<!-- INFORMATION SECTION -->
+<section class="information-section">
+    <div class="our-services-container">
+        
+        <div class="services-card">
+            <div class="service-card">
+                <mat-icon class=service-card-icon>payments</mat-icon>
+                <p class="service-card-title">Compra e Venda</p>
+                <p class="service-card-content">
+                    A compra/venda do seu imovel com os melhores profissionais 
+                </p>
+                
+            </div>
+            <div class="service-card">
+                <mat-icon class=service-card-icon>event</mat-icon>
+                <p class="service-card-title">Compra e Venda</p>
+                <p class="service-card-content">
+                    A compra/venda do seu imovel com os melhores profissionais 
+                </p>
+                
+            </div>
+            <div class="service-card">
+                <mat-icon class=service-card-icon>schedule</mat-icon>
+                <p class="service-card-title">Compra e Venda</p>
+                <p class="service-card-content">
+                    A compra/venda do seu imovel com os melhores profissionais 
+                </p>
+                
+            </div>
+        </div>
+        <div class="services-information">
+                
+        </div>
+       
     </div>
 
-    <app-corousel class="carousel"></app-corousel>
+    <div class="about-us-container">
 
-    
+    </div>
 </section>
+<!-- /INFORMATION SECTION -->
+
