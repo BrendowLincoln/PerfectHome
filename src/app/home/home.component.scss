@@ -401,3 +401,107 @@
     }
     
 }
+
+.contact-section {
+
+    height: 467px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contact-container {
+        
+        display: flex;
+        width: 1232px;
+
+        .contact-location {
+
+            .mapouter{
+                position:relative;
+                text-align:right;
+                height:409px;
+                width:490px;
+                
+                .gmap_canvas {
+                    overflow:hidden;
+                    background:none!important;
+                    height:409px;
+                    width:490px;
+                }
+            }
+        }
+    
+        .contact-email {
+            
+            display: flex;
+            flex-direction: column;
+            padding-left: 50px;
+            
+            
+            &-title {
+                font-family: "Rufina", serif;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 1;
+                color: #464646;
+                width: 80%;
+                min-width: 623px;
+            }
+
+            ::ng-deep .mat-flat-button {
+                    
+                background-color: #A16800;
+                color: white;
+                border-radius: 45px;
+            }
+
+            ::ng-deep .mat-form-field{
+                width: 573px;
+            }
+
+            ::ng-deep .mat-form-field-flex {
+
+                align-items: center;
+                padding-left: 25px;
+            }
+
+            ::ng-deep .mat-form-field-outline-start {
+                border: none;
+            }
+
+            ::ng-deep .mat-form-field-outline-end {
+                border-radius: 45px;
+                border: 1px solid currentColor;
+                margin-left: -8px;
+                box-shadow: -3px 3px 5px;
+            }
+
+            ::ng-deep .mat-form-field-outline-end:hover {
+                border-radius: 45px;
+                border: 1px solid currentColor;
+                margin-left: -8px;
+                box-shadow:  0 0 transparent;
+            }
+
+            .submit-email-form-field {
+        
+                
+
+                .submit-email-field {
+
+                }
+            }
+
+            
+            
+        }
+    }
+}
+
+.footer-section {
+    height: 282px;
+    background-color: #183D67;
+}
+
+
