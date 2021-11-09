@@ -20,7 +20,6 @@ export class CorouselComponent implements OnInit {
     
   }
 
-
   public scrollRight(): void {
     this.carouselContainer.nativeElement.scrollTo({ left: (this.carouselContainer.nativeElement.scrollLeft + 850), behavior: 'smooth' });
   }

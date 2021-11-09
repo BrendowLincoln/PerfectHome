@@ -31,12 +31,12 @@
             opacity: 1;
         }*/
 
-        &:first-of-type {
-            margin-left: 20%;
+        &:first-child {
+            margin-left: 32%;
         }
 
-        &:last-of-type {
-            margin-right: 100px;
+        &:last-child {
+            margin-right: 32%;
         }
 
 
