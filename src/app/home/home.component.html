@@ -1,5 +1,5 @@
 <!-- PRIMARY SECTION -->
-<section class="primary-section">
+<section class="primary-section" #home>
 
     <!-- NAVBAR -->
     <header>
@@ -7,10 +7,10 @@
             <mat-toolbar-row>
                 <img src="/assets/a674660e563f4e73a3c04a780026b85e.png" alt="Logo Perfect Home" class="logo">
                 <div class="menu">
-                    <button mat-button class="menu-button">Home</button>
-                    <button mat-button class="menu-button">Serviços</button>
-                    <button mat-button class="menu-button">Sobre</button>
-                    <button mat-button class="menu-button">Contato</button>
+                    <button (click)="scrollTo(home)" mat-button class="menu-button">Home</button>
+                    <button (click)="scrollTo(services)" mat-button class="menu-button">Serviços</button>
+                    <button (click)="scrollTo(aboutus)" mat-button class="menu-button">Sobre</button>
+                    <button (click)="scrollTo(contact)" mat-button class="menu-button">Contato</button>
                     <button mat-button class="login-button">Login</button>
     
                 </div>
@@ -61,7 +61,7 @@
 <!-- /PRIMARY SECTION -->
 
 <!-- POPULAR SECTION -->
-<section class="popular-propertys-section">
+<section class="popular-propertys-section" #popularProperty>
     
     <div class="background-box">
         <p class="popular-propertys-section-title">Imóveis mais vistos</p>
@@ -75,7 +75,7 @@
 
 <!-- INFORMATION SECTION -->
 <section class="information-section">
-    <div class="our-services-container">
+    <div class="our-services-container" #services>
         
         <div class="services-card">
             <div class="service-card">
@@ -115,7 +115,7 @@
         </div>
        
     </div>
-    <div class="about-us-container">
+    <div class="about-us-container" #aboutus>
         <div class="about-us-information">
                 <p class="about-us-information-subtitle">Sobre Nós</p>
                 <p class="about-us-information-title">
@@ -136,7 +136,7 @@
 <!-- /INFORMATION SECTION -->
 
 <!-- CONTACT SECTION -->
-<section class="contact-section">
+<section class="contact-section" #contact>
 
     <div class="contact-container">
        <div class="contact-location">
@@ -152,10 +152,14 @@
                 Cadastre-se para receber ofertas de propriedades na sua area e encotrar os clientes perfeitos para o seu imovel!
             </p>
 
-            <mat-form-field appearance="outline" class="submit-email-form-field">
-                <input matInput placeholder="Ex: bernardoluiz@gmail.com">
-                <button matSuffix mat-flat-button class="submit-buttom">Cadastrar</button>
-            </mat-form-field>
+            <div class="contact-email-form">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Ex: bernardoluiz@gmail.com">
+                    <button matSuffix mat-icon-button>
+                        <mat-icon class="submit-button">send</mat-icon>
+                    </button>
+                </mat-form-field>
+            </div>
             
         </div>
     </div>
@@ -164,6 +168,23 @@
 
 <!-- FOOTER SECTION -->
 <footer class="footer-section">
-    
+    <div class="logo-and-media-container">
+        <img src="/assets/a674660e563f4e73a3c04a780026b85e.png" alt="Logo Perfect Home" class="logo">
+        <p class="medias-text">Nos siga nas redes sociais</p>
+        <div class="medias-container">
+            <fa-icon class="media-item" [icon]="['fab','whatsapp']"></fa-icon>
+            <fa-icon class="media-item" [icon]="['fab','linkedin-in']"></fa-icon>
+            <fa-icon class="media-item" [icon]="['fab','facebook']"></fa-icon>
+            <fa-icon class="media-item" [icon]="['fab','instagram']"></fa-icon>
+        </div>
+    </div>
+    <div class="menu-footer">
+        <button (click)="scrollTo(home)" mat-button class="menu-button">Home</button>
+        <button (click)="scrollTo(services)" mat-button class="menu-button">Serviços</button>
+        <button (click)="scrollTo(aboutus)" mat-button class="menu-button">Sobre</button>
+        <button (click)="scrollTo(contact)" mat-button class="menu-button">Contato</button>
+        <button  mat-button class="login-button">Login</button>
+
+    </div>
 </footer>
 <!-- /FOOTER-SECTION -->

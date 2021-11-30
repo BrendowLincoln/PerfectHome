@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CorouselComponent } from './corousel/corousel.component';
 import { MaterialModule } from './material.module';
+import { FontawesomeModule } from './fontawesome.module';
 
 
 
@@ -11,11 +12,15 @@ import { MaterialModule } from './material.module';
   ],  
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    FontawesomeModule
   ],
   exports: [
     CorouselComponent,
-    MaterialModule
+    MaterialModule,
+    FontawesomeModule
   ]
 })
-export class SharedModule { }
+export class SharedModule { 
+
+}
