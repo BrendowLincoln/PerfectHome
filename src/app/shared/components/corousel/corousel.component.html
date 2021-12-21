@@ -1,9 +1,9 @@
 <div #carouselContainer class="carousel-container">
-    <ng-container *ngFor="let number of valuesArray; let i = index">
-        <mat-card class="slide-card" [ngClass]="{'slide-card-principal': index === i}" id="{{'card' + i}}">
+    <div *ngFor="let number of valuesArray; let i = index" id="{{ 'card' + i }}" #cards>
+        <mat-card class="slide-card" [ngClass]="{'slide-card-principal': index === i}">
             {{ number }}
         </mat-card>
-    </ng-container>
+    </div>
     <div class="buttons-container">
         <button [disabled]="isInTheStart()" mat-fab class="button button-left" [ngClass]="{'button-left-disabled': isInTheStart()}" (click)="scrollLeft()">
             <mat-icon class="icon-button icon-button-left" [ngClass]="{'icon-button-left-disabled': isInTheStart()}">chevron_left</mat-icon>
