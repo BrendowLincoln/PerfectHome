@@ -1,5 +1,6 @@
  import { ViewportScroller } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, Input, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, Input, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { Scroll } from '@angular/router';
 
 @Component({
   selector: 'app-corousel',
@@ -20,9 +21,8 @@ export class CorouselComponent implements OnInit, AfterViewInit {
 
   public index: number = 0;
 
-  constructor() { }
+  constructor(private viewportScroller: ViewportScroller, private cdk: ChangeDetectorRef) { }
   ngAfterViewInit(): void {
-    console.log(this.cards);
     
   }
 
@@ -34,9 +34,10 @@ export class CorouselComponent implements OnInit, AfterViewInit {
 
     if(this.index < (this.valuesArray.length - 1))
     {
-      this.index++; 
-      const element =  this.cards.find((x) => x.nativeElement.id === `card${this.index}`);
-      element?.nativeElement.scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'});
+      this.index++;
+      const element = document.getElementById(`card${this.index}`);
+      element?.scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'});
+      this.cdk.detectChanges();
     }
   }
 
@@ -44,9 +45,9 @@ export class CorouselComponent implements OnInit, AfterViewInit {
     
     if(this.index > 0) {
       this.index--;   
-      const element =  this.cards.find((x) => x.nativeElement.id === `card${this.index}`);
-      element?.nativeElement.scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'});
-    
+      const element = document.getElementById(`card${this.index}`);
+      element?.scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'});
+      this.cdk.detectChanges();
     }   
   }
 

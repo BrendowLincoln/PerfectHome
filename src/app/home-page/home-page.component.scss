@@ -15,12 +15,14 @@
     flex-direction: row;
     min-width: 1340px;
 
-    ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline,
-    ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-end,
-    ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-start {
-        border-width: 1px !important;
-        color: transparent;
-        opacity: 0;
+    ::ng-deep {
+        .mat-form-field-appearance-outline .mat-form-field-outline,
+        .mat-form-field-appearance-outline .mat-form-field-outline-end,
+        .mat-form-field-appearance-outline .mat-form-field-outline-start {
+            border-width: 1px !important;
+            color: transparent;
+            opacity: 0;
+        }
     }
 
 
